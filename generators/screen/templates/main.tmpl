@@ -1,0 +1,28 @@
+define(function ( require ) {
+    'use strict';
+
+    /**
+     * Dependencies
+     */
+    var angular = require('angular');
+    var <%= screen %>Template = require('text!./templates/<%= screen %>.tmpl.html');
+    var <%= screen %>Controller = require('./controllers/<%= screen %>Controller');
+
+    /**
+     * Module: <%= screen %> screen
+     */
+    var module = angular.module('app.<%= screen %>', []);
+
+    module
+        .controller( <%= screen %>Controller )
+        .config(['$stateProvider', function ( $stateProvider ) {
+            $stateProvider
+                .state('root.<%= screen %>', {
+                    url: '/<%= url %>',
+                    template: <%= screen %>Template,
+                    controller: '<%= screen %>Controller'
+                });
+        }]);
+
+    return module;
+});
