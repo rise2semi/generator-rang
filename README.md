@@ -28,15 +28,17 @@ yo rang
 
 **Note: Generators are to be run from the root directory of your app.**
 
-### Screen  
- 
+### Screen
+
 Generates a screen module with a controller and view.
 
 Example:
+
 ```bash
 yo rang:screen
 ```
 
 ## Testing
-
-TODO
+```bash
+gulp test
+```

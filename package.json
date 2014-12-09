@@ -9,5 +9,23 @@
   "dependencies": {
     "chalk": "^0.5.1",
     "yeoman-generator": "^0.17.7"
-  }
+  },
+  "main": "app/index.js",
+  "devDependencies": {
+    "fixture-stdout": "^0.2.1",
+    "gulp": "^3.8.10",
+    "gulp-mocha": "^2.0.0"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rise2semi/generator-rang.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rise2semi/generator-rang/issues"
+  },
+  "homepage": "https://github.com/rise2semi/generator-rang"
 }

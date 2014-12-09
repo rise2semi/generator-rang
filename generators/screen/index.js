@@ -115,10 +115,17 @@ RangScreenGenerator.prototype.writing = function () {
 };
 
 /**
+ * Read an application dependencies
+ */
+RangScreenGenerator.prototype._getDependencies = function () {
+    return this.readFileAsString( config.appModules );
+};
+
+/**
  * Add module as the application dependency
  */
 RangScreenGenerator.prototype.updateDependencies = function () {
-    var appModulesSrc = this.readFileAsString( config.appModules );
+    var appModulesSrc = this._getDependencies();
     var appModules = [];
     var lastModule;
 
