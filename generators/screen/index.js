@@ -35,6 +35,15 @@ function RangScreenGenerator() {
     yeoman.generators.Base.apply( this, arguments );
 
     this.conflicter.force = true;
+
+    /**
+     * Show information on completion.
+     */
+    this.on('end', function () {
+        this.log(
+            '\n\n' + chalk.green('Success!') + ' Screen \'' + userAnswers.screenName + '\' created!'
+        );
+    }.bind( this ));
 }
 
 util.inherits( RangScreenGenerator, yeoman.generators.Base );
@@ -154,15 +163,6 @@ RangScreenGenerator.prototype.updateDependencies = function () {
     );
 
     this.write( config.appModules, appModulesSrc );
-};
-
-/**
- * Show information on completion.
- */
-RangScreenGenerator.prototype.end = function () {
-    this.log(
-        '\n\n' + chalk.green('Success!') + ' Screen \'' + userAnswers.screenName + '\' created!'
-    );
 };
 
 module.exports = RangScreenGenerator;

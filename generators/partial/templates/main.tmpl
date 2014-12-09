@@ -1,0 +1,14 @@
+define(function ( require ) {
+    'use strict';
+
+    /**
+     * Dependencies
+     */
+    var angular = require('angular');
+    var <%= partial %>Controller = require('./controllers/<%= partial %>Controller');
+
+    /**
+     * Module: <%= partial %> partial
+     */
+    return angular.module('app.<%= partial %>', []).controller( <%= partial %>Controller );
+});

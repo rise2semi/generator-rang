@@ -23,7 +23,7 @@ yo rang
 ## Generators
 
 * [rang:screen](#screen)
-* rang:partial - TODO
+* [rang:partial](#partial)
 * rang:service - TODO
 
 **Note: Generators are to be run from the root directory of your app.**
@@ -36,6 +36,16 @@ Example:
 
 ```bash
 yo rang:screen
+```
+
+### Partial
+
+Generates a partial module with a view and optionally a controller
+
+Example:
+
+```bash
+yo rang:partial
 ```
 
 ## Testing
