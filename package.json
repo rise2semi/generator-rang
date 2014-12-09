@@ -1,7 +1,7 @@
 {
   "name": "generator-rang",
   "author": "Borys Semerenko <rise2semi@gmail.com>",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Scaffolds out AngularJS application with RequireJS",
   "keywords": [
     "yeoman-generator"

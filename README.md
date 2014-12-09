@@ -52,3 +52,7 @@ yo rang:partial
 ```bash
 gulp test
 ```
+
+## Changelog
+
+Recent changes can be viewed on Github on the [Releases Page](https://github.com/rise2semi/generator-rang/releases)
